@@ -1,0 +1,10 @@
+Flask 
+psycopg2 
+gunicorn==20.1.0
+python-dotenv==0.19.1
+Flask-SQLAlchemy==3.0.2
+SQLAlchemy==1.4.42
+sqlalchemy-orm==1.2.10
+SQLAlchemy-serializer==1.4.1
+SQLAlchemy==1.4.42
+psycopg2==2.9.3
