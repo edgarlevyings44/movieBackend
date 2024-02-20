@@ -1,12 +1,13 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
 app = Flask(__name__)
+app.debug = True
 
-
-'''If everything works fine you will get a 
-message that Flask is working on the first
-page of the application
-'''
-
+# adding configuration for using a sqlite database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+# Creating an SQLAlchemy instance
+db = SQLAlchemy(app)
 @app.route('/')
 def check():
 	return 'Flask is working'
